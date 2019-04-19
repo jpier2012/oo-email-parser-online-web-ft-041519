@@ -10,7 +10,7 @@ class EmailParser
   attr_accessor :parse
 
   def initialize(string)
-    self.all = string.split(/[,\s]+/)
+    @@all = string.split(/[,\s]+/)
   end
 
   def self.all
